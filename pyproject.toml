@@ -1,0 +1,26 @@
+[project]
+name = "numpy-fortran-tobytes"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Clouder0", email = "clouder0@outlook.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.3.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.8,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+note = [
+    "ipykernel>=6.30.1",
+    "jupyter>=1.1.1",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
